@@ -12,7 +12,7 @@ Vagrant.configure("2") do |config|
   end
   
   # Cloud-Init provisioning
-  config.vm.provision "file", source: "./cloud-init/user-data", destination: "/tmp/user-data"
+  config.vm.provision "file", source: "./cloud-init/user-data.yaml", destination: "/tmp/user-data"
   
   config.vm.provision "shell", inline: <<-SHELL
     # Install cloud-init if not present

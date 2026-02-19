@@ -1,3 +1,4 @@
+#cloud-config
 # Create the student user
 users:
   - name: student
